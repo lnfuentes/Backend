@@ -72,7 +72,7 @@ class ProductManager {
     }
 }
 
-const newProduct = new ProductManager('products.json');
+const productList = new ProductManager('src/products.json');
 
 const product = {
     title: 'title',
@@ -101,9 +101,14 @@ const product3 = {
     stock: 588
 }
 
-newProduct.addProduct(product);
-newProduct.addProduct(product2);
-newProduct.addProduct(product3);
-console.log(newProduct.getProductById(0))
+// productList.addProduct(product);
+// productList.addProduct(product2);
+// productList.addProduct(product3);
+// console.log(productList.getProductById(0))
 
-console.log(newProduct.getProducts())
+// console.log(productList.getProducts());
+
+
+module.exports = {
+    productList
+}
